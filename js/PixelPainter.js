@@ -46,14 +46,18 @@
 
 		for(var i = 0; i < 5; i++) { // create rows
 			var row = $("<tr></tr>");
+
 			for (var j = 0; j < 5; j++) {
 				var col = $("<td></td>")
 											.addClass("emptyColorCell")
 											.css("background-color", '');
+
 				row.append(col);
 
 			}
+
 			emptyTable.append(row);
+
 		}
 
 		$('#artboard').append(emptyTable);
@@ -75,15 +79,16 @@
 	controlsTable();
 
 
-	// Clear button
+	// Clear button functionality
 	$('#clearButton').on("click", function(){
 		$('.emptyColorCell').css("background-color", "");
 	})
 
 
-	// Erase button
-
-
+	// Erase button functionality
+	$('#eraseButton').on("click", function(){
+		currentColor = '';
+	})
 
 
 })();
