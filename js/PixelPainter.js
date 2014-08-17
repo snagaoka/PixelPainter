@@ -64,38 +64,19 @@
 	var currentColor;
 
 	$('#controls').on("click", ".paletteColorCell", function(){
-		// mouseDownState = true;
 		currentColor = $(this).css("background-color");
 		console.log(currentColor);
-		// console.log("mousedown click");
-
 	})
 
 	$('#artboard').on("click", ".emptyColorCell", function(){
 		$(this).css("background-color", currentColor);
 	})
-	// .on("td", "mouseenter", function (){
-	// 	if (mouseDownState) {
-	// 		$el = $(this);
-
-	// 		// Drawing action
-	// 		$el.css("background", "#000000");
-
-	// 		console.log("mouseenter click");
-
-	// 	}
-
-	// });
-
-	$('html').bind("mouseup", function(){
-		mouseDownState = false;
-	});
-
 
 	controlsTable();
 
 
 	// Erase button
+
 
 
 
