@@ -75,14 +75,13 @@
 	controlsTable();
 
 
-	// Erase button
-
-
-
-
 	// Clear button
+	$('#clearButton').on("click", function(){
+		$('.emptyColorCell').css("background-color", "");
+	})
 
 
+	// Erase button
 
 
 
