@@ -1,9 +1,19 @@
+#controls{
+	float: left;
+}
+
 #artboard{
 	float: right;
 }
 
-.paletteColor{
+.paletteColorCell{
 	height:	20px; 
 	width:	20px;
-	
+}
+
+.emptyColorCell{
+	height:	40px;
+	width: 	40px;
+	border-style: solid;
+	border-width: 2controlpx;
 }
